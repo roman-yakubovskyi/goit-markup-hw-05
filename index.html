@@ -527,7 +527,11 @@
         <div class="modal-footer">
           <p class="modal-footer-title">Subscribe</p>
           <form class="footer-form">
-            <label for="footer-email" aria-label="Footer input"></label>
+            <label
+              for="footer-email"
+              class="footer-label-email"
+              aria-label="Footer input"
+            ></label>
             <input
               type="email"
               name="footer-email"
@@ -546,7 +550,7 @@
       </div>
     </footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-icon-close" width="8" height="8">
@@ -607,11 +611,11 @@
           </div>
 
           <div class="modal-field-comment">
-            <label for="user-text" class="modal-user">Comment</label>
+            <label for="user-comment" class="modal-user">Comment</label>
             <textarea
-              name="user-text"
+              name="user-comment"
               class="modal-comment"
-              id="user-text"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -623,9 +627,9 @@
               value="true"
               class="modal-check visually-hidden"
             />
-            <label for="terms" class="modal-check-text"
+            <label for="user-privacy" class="modal-check-text"
               ><span class="checkbox-icon-check">
-                <svg class="modal-icon-check" width="16" height="16">
+                <svg class="modal-icon-check" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
@@ -634,6 +638,12 @@
                 >Privacy Policy</a
               ></label
             >
+            <input
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              id="user-privacy"
+            />
           </div>
           <button type="submit" class="modal-submit-btn">
             <span class="modal-send-btn">Send</span>
