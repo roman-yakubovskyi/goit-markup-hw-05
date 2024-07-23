@@ -762,7 +762,7 @@ button {
   align-items: center;
 }
 
-.modal-check:checked + .lable-checkbox > .checkbox-icon-check {
+.modal-check:checked + .modal-check-text > .checkbox-icon-check {
   fill: #f4f4fd;
   background-color: #404bbf;
   border: none;
